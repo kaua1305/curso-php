@@ -10,7 +10,14 @@ Class Aves {
     public $alimentacao;
     public $tiposDePes;
 
-    public __construct($nome, $tiposDeAsas, $tiposDePes, $tiposDeBicos, $habitat, $alimentacao)
+    public __construct($nome, $tiposDeAsas, $tiposDeBicos, $habitat, $alimentacao, $tiposDePes){
+        $this->nome = $nome;
+        $this->tiposDeAsas = $tiposDeAsas;
+        $this->tiposDeBicos = $tiposDeBicos;
+        $this->habitat = $habitat;
+        $this->alimentacao = $alimentacao;
+        $this->tiposDePes = $tiposDePes;
+    }
 
     public function apresentar() {
         echo "A ave {$this->nome}, tem como habitat natural {$this->habitat}, elas se alimentam naturalmente de {$this->alimentacao}.<br>
@@ -19,6 +26,7 @@ Class Aves {
     }
 }
 
-$ave1 = new Aves("Pica-Pau", )
+$ave1 = new Aves("Pica-Pau", "florestas", "vermes e frutas", "longas", "quatro dedos");
+$ave1 -> apresentar();
 
 ?>

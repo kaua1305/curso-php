@@ -14,6 +14,16 @@
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
+            <div class="modulo roxo-escuro">
+                    <h3>9. Exercícios</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=pet&file=petshop">
+                                Petshop
+                            </a>
+                        </li>
+                    </ul>
+                </div>
                 <div class="modulo roxo-escuro">
                     <h3>8. Paradigma O.O</h3>
                     <ul>
@@ -31,12 +41,57 @@
                             <a href="exercicio.php?dir=classes_objeto&file=aves">
                                 Aves
                             </a>
-                            <li>
+                        </li>
+                        <li>
                             <a href="exercicio.php?dir=classes_objeto&file=heranca">
                                 Herança
                             </a>
                         </li>
-                        </li>                      
+                        <li>
+                            <a href="exercicio.php?dir=classes_objeto&file=visibilidade">
+                                Visibilidade
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objeto&file=static">
+                                Membros Estáticos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objeto&file=interface">
+                                Interface
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objeto&file=abstract">
+                                Abstrato
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objeto&file=final">
+                                Modificador Final
+                            </a>
+                        </li>  
+                        <li>
+                            <a href="exercicio.php?dir=classes_objeto&file=trait_01">
+                                Traits #01
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objeto&file=trait_02">
+                                Traits #02
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objeto&file=magic_methods">
+                                Métodos Mágicos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=classes_objeto&file=polimorfismo">
+                                Polimorfismo
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo vermelho-escuro">
