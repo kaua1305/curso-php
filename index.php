@@ -1,3 +1,12 @@
+<?php
+
+session_start();
+if (!$_SESSION['usuario']){
+    header('Location: login.php');
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,9 +20,44 @@
         <h1>Curso PHP</h1>
         <h2>Índice dos Exercícios</h2>
     </header>
+    <nav class="navegacao">
+        <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> 
+            class="verde">Sem formatação</a>
+        <a href="index.php" class="vermelho">Voltar</a>
+    </nav>
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
+            <div class="modulo laranja">
+                    <h3>11. Mòdulo</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=sessao&file=basico_sessao">
+                                Sessão
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=sessao&file=gerenciando_sessao">
+                                Gerenciando Sessão
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            <div class="modulo verde">
+                    <h3>10. Mòdulo</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=tratamento_erro&file=try_catch">
+                                Try/Catch
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=tratamento_erro&file=erros_personalizados">
+                                Erros
+                            </a>
+                        </li>
+                    </ul>
+                </div>
             <div class="modulo roxo-escuro">
                     <h3>9. Exercícios</h3>
                     <ul>

@@ -1,5 +1,5 @@
-* {
-    font-family: 'Oswald', sans-serif;
+*{
+    font-family: "Oswald", sans-serif;
     box-sizing: border-box;
 }
 
@@ -7,17 +7,18 @@ body {
     height: 100vh;
     margin: 0px;
     display: grid;
-    grid-template-rows: 120px 1fr 60px;
+    grid-template-rows: 120px 60px 1fr 60px;
     grid-template-columns: 1fr;
     grid-template-areas: 
-        "cabecalho"
-        "principal"
-        "rodape";
+    "cabecalho"
+    "navegacao"
+    "principal"
+    "rodape";
 }
 
 .cabecalho {
     grid-area: cabecalho;
-    background-color: #1867c0;
+    background-color: blue;
     color: white;
     display: flex;
     flex-direction: column;
@@ -25,7 +26,7 @@ body {
     align-items: center;
     padding-bottom: 10px;
     z-index: 1;
-    box-shadow: 0px 4px 9px -2px rgba(0,0,0,0.75);
+    box-shadow: 0px 4px 15px -2px rgba(0,0,0,0.75);
 }
 
 .cabecalho > h1 {
@@ -33,7 +34,6 @@ body {
     font-weight: 300;
     font-size: 2.8rem;
 }
-
 .cabecalho > h2 {
     margin: 0px;
     font-weight: 200;
@@ -42,18 +42,9 @@ body {
 
 .principal {
     grid-area: principal;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 240px);
     background-color: #f0f0f0;
     padding: 20px;
-}
-
-.conteudo {
-    position: relative;
-    height: 100%;
-    overflow-y: scroll;
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.2);
 }
 
 .rodape {
@@ -63,8 +54,19 @@ body {
     justify-content: flex-end;
     align-items: center;
     font-size: 1.2rem;
-    padding-right: 20px;
+    padding: 0px 20px;
     color: #444;
+    /* position: sticky;
+    bottom: 0px; */
+}
+
+.conteudo{
+    position: relative;
+    height: 100%;
+    overflow-y: scroll;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 0px 25px 0px rgba(0,0,0,0.2);
 }
 
 .modulos {
@@ -73,13 +75,12 @@ body {
     justify-content: space-around;
 }
 
-.modulo {
+.modulo{
     flex-basis: 32%;
-    margin-bottom: 20px;
-    border-radius: 5px;
+    margin-bottom: 10px;
 }
 
-.modulo > h3 {
+.modulo > h3{
     margin: 0px;
     color: #fff;
     font-weight: 300;
@@ -88,15 +89,15 @@ body {
     background-color: #1867c0;
 }
 
-.modulo > ul {
+.modulo > ul{
     margin: 0px;
     padding: 10px;
     list-style: none;
 }
 
 .modulo > ul > li {
-    padding: 7px;
-    font-size: 1.2rem;
+    padding: 10px;
+    font-size: 1.3rem;
     cursor: pointer;
 }
 
@@ -110,38 +111,48 @@ body {
     background-color: #EEE;
 }
 
-.modulo.verde { border: 2px solid #4CAF50; }
-.modulo.verde > h3 { background-color: #4CAF50; }
+.modulo.verde {border: 2px solid green;}
+.modulo.verde > h3 {background-color: green;}
 
-.modulo.vermelho { border: 2px solid #F44336; }
-.modulo.vermelho > h3 { background-color: #F44336; }
+.modulo.vermelho {border: 2px solid red;}
+.modulo.vermelho > h3 {background-color: red;}
 
-.modulo.azul { border: 2px solid #2196F3; }
-.modulo.azul > h3 { background-color: #2196F3; }
+.modulo.azul {border: 2px solid blue;}
+.modulo.azul > h3 {background-color: blue;}
 
-.modulo.roxo { border: 2px solid #9C27B0; }
-.modulo.roxo > h3 { background-color: #9C27B0; }
+.modulo.roxo {border: 2px solid purple;}
+.modulo.roxo > h3 {background-color: purple;}
 
-.modulo.laranja { border: 2px solid #FF9800; }
-.modulo.laranja > h3 { background-color: #FF9800; }
+.modulo.laranja {border: 2px solid orange;}
+.modulo.laranja > h3 {background-color: orange;}
 
-.modulo.verde-escuro { border: 2px solid #1B5E20; }
-.modulo.verde-escuro > h3 { background-color: #1B5E20; }
+.modulo.verde-escuro {border: 2px solid darkgreen;}
+.modulo.verde-escuro > h3 {background-color: darkgreen;}
 
-.modulo.vermelho-escuro { border: 2px solid #B71C1C; }
-.modulo.vermelho-escuro > h3 { background-color: #B71C1C; }
+.modulo.vermelho-escuro {border: 2px solid darkred;}
+.modulo.vermelho-escuro > h3 {background-color: darkred;}
 
-.modulo.azul-escuro { border: 2px solid #0D47A1; }
-.modulo.azul-escuro > h3 { background-color: #0D47A1; }
+.modulo.marrom {border: 2px solid brown;}
+.modulo.marrom > h3 {background-color: brown;}
 
-.modulo.roxo-escuro { border: 2px solid #4A148C; }
-.modulo.roxo-escuro > h3 { background-color: #4A148C; }
+.modulo.cinza-claro {border: 2px solid lightslategray;}
+.modulo.cinza-claro > h3 {background-color: lightslategray;}
 
-p.divisao {
-    margin-bottom: 0px;
-    font-weight: bold;
+.navegacao {
+    grid-area: navegacao;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #555;
 }
 
-hr {
-    margin-top: 0px;
+.navegacao > a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-size: 1.3rem;
+    background-color: lightblue;
+    padding: 5px 10px;
+    margin-right: 10px;
+
 }
