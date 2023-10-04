@@ -10,8 +10,8 @@ Class Aves {
     public $alimentacao;
     public $tiposDePes;
 
-    public __construct($nome, $tiposDeAsas, $tiposDeBicos, $habitat, $alimentacao, $tiposDePes){
-        $this->nome = $nome;
+    function __construct ($novoNome, $tiposDeAsas, $tiposDeBicos, $habitat, $alimentacao, $tiposDePes){
+        $this->nome = $novoNome;
         $this->tiposDeAsas = $tiposDeAsas;
         $this->tiposDeBicos = $tiposDeBicos;
         $this->habitat = $habitat;

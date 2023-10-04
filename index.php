@@ -1,6 +1,11 @@
 <?php
 
 session_start();
+
+if($_COOKIE['usuario']){
+    $_SESSION['usuario'] = $_COOKIE['usuario'];
+}
+
 if (!$_SESSION['usuario']){
     header('Location: login.php');
 }
@@ -21,14 +26,23 @@ if (!$_SESSION['usuario']){
         <h2>Índice dos Exercícios</h2>
     </header>
     <nav class="navegacao">
-        <a href=<?= "/{$_GET['dir']}/{$_GET['file']}.php" ?> 
-            class="verde">Sem formatação</a>
-        <a href="index.php" class="vermelho">Voltar</a>
+        <span class="usuario">Usuário: <?= $_SESSION['usuario']?></span>
+        <a href="logout.php" class="azul">Sair</a>
     </nav>
     <main class="principal">
         <div class="conteudo">
             <nav class="modulos">
-            <div class="modulo laranja">
+                <div class="modulo preto">
+                    <h3>13. Mòdulo</h3>
+                    <ul>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=datas_01">
+                                Datas 01
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="modulo rosa">
                     <h3>11. Mòdulo</h3>
                     <ul>
                         <li>
@@ -43,7 +57,7 @@ if (!$_SESSION['usuario']){
                         </li>
                     </ul>
                 </div>
-            <div class="modulo verde">
+                <div class="modulo amarelo">
                     <h3>10. Mòdulo</h3>
                     <ul>
                         <li>
@@ -58,7 +72,7 @@ if (!$_SESSION['usuario']){
                         </li>
                     </ul>
                 </div>
-            <div class="modulo roxo-escuro">
+                <div class="modulo roxo">
                     <h3>9. Exercícios</h3>
                     <ul>
                         <li>
@@ -68,7 +82,7 @@ if (!$_SESSION['usuario']){
                         </li>
                     </ul>
                 </div>
-                <div class="modulo roxo-escuro">
+                <div class="modulo cinza-claro">
                     <h3>8. Paradigma O.O</h3>
                     <ul>
                         <li>
@@ -203,7 +217,7 @@ if (!$_SESSION['usuario']){
                         </li>
                     </ul>
                 </div>
-                <div class="modulo verde-escuro">
+                <div class="modulo laranja">
                     <h3>6. Repetições</h3>
                     <ul>
                         <li>
@@ -248,7 +262,7 @@ if (!$_SESSION['usuario']){
                         </li>
                     </ul>
                 </div>
-                <div class="modulo laranja">
+                <div class="modulo verde-escuro">
                     <h3>5. Array</h3>
                     <ul>
                         <li>

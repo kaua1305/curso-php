@@ -1,6 +1,6 @@
 <div class="titulo">Comentários PHP</div>
 
-<?=
+<?php
 echo "Estou no php"
 // echo "Comentario"
 # echo "Comentario"

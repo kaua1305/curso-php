@@ -117,26 +117,43 @@ body {
 .modulo.vermelho {border: 2px solid red;}
 .modulo.vermelho > h3 {background-color: red;}
 
-.modulo.azul {border: 2px solid blue;}
-.modulo.azul > h3 {background-color: blue;}
+.modulo.azul {border: 2px solid #2146ff;}
+.modulo.azul > h3 {background-color: #2146ff;}
 
-.modulo.roxo {border: 2px solid purple;}
-.modulo.roxo > h3 {background-color: purple;}
+.modulo.roxo {border: 2px solid #a800be;}
+.modulo.roxo > h3 {background-color: #a800be;}
 
-.modulo.laranja {border: 2px solid orange;}
-.modulo.laranja > h3 {background-color: orange;}
+.modulo.laranja {border: 2px solid #ff8400}
+.modulo.laranja > h3 {background-color: #ff8400;}
 
-.modulo.verde-escuro {border: 2px solid darkgreen;}
-.modulo.verde-escuro > h3 {background-color: darkgreen;}
+.modulo.verde-escuro {border: 2px solid #004400;}
+.modulo.verde-escuro > h3 {background-color: #004400;}
 
-.modulo.vermelho-escuro {border: 2px solid darkred;}
-.modulo.vermelho-escuro > h3 {background-color: darkred;}
+.modulo.vermelho-escuro {border: 2px solid #b60101;}
+.modulo.vermelho-escuro > h3 {background-color: #b60101;}
 
-.modulo.marrom {border: 2px solid brown;}
-.modulo.marrom > h3 {background-color: brown;}
+.modulo.marrom {border: 2px solid #8e2626;}
+.modulo.marrom > h3 {background-color: #8e2626;}
 
 .modulo.cinza-claro {border: 2px solid lightslategray;}
 .modulo.cinza-claro > h3 {background-color: lightslategray;}
+
+.modulo.rosa {border: 2px solid #ff00f7;}
+.modulo.rosa > h3 {background-color: #ff00f7;}
+
+.modulo.amarelo {border: 2px solid #f0ec00;}
+.modulo.amarelo > h3 {background-color: #f0ec00;}
+
+.modulo.preto {border: 2px solid black;}
+.modulo.preto > h3 {background-color: black;}
+
+.modulo.branco {border: 2px solid white;}
+.modulo.branco > h3 {background-color: white;}
+
+
+.navegacao > a.verde {background-color: green;}
+.navegacao > a.vermelho {background-color: red;}
+.navegacao > a.azul {background-color: #2b7cff;}
 
 .navegacao {
     grid-area: navegacao;
@@ -155,4 +172,13 @@ body {
     padding: 5px 10px;
     margin-right: 10px;
 
+}
+
+span.usuario {
+    flex-grow: 1;
+    justify-self: flex-start;
+    color: white;
+    padding-left: 10px;
+    font-size: 1.2rem;
+    font-weight: 300;
 }
