@@ -135,8 +135,8 @@ body {
 .modulo.marrom {border: 2px solid #8e2626;}
 .modulo.marrom > h3 {background-color: #8e2626;}
 
-.modulo.cinza-claro {border: 2px solid lightslategray;}
-.modulo.cinza-claro > h3 {background-color: lightslategray;}
+.modulo.cinza-claro {border: 2px solid #b7b7b7;}
+.modulo.cinza-claro > h3 {background-color: #b7b7b7;}
 
 .modulo.rosa {border: 2px solid #ff00f7;}
 .modulo.rosa > h3 {background-color: #ff00f7;}
@@ -147,8 +147,8 @@ body {
 .modulo.preto {border: 2px solid black;}
 .modulo.preto > h3 {background-color: black;}
 
-.modulo.branco {border: 2px solid white;}
-.modulo.branco > h3 {background-color: white;}
+.modulo.lilas {border: 2px solid #d26edc;}
+.modulo.lilas > h3 {background-color: #d26edc;}
 
 
 .navegacao > a.verde {background-color: green;}

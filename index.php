@@ -40,6 +40,26 @@ if (!$_SESSION['usuario']){
                                 Datas 01
                             </a>
                         </li>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=escrever_arquivos">
+                                Escrevendo Arquivos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=ler_arquivos">
+                                Ler Arquivos
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=upload">
+                                Upload
+                            </a>
+                        </li>
+                        <li>
+                            <a href="exercicio.php?dir=api&file=download">
+                            Download
+                            </a>
+                        </li>
                     </ul>
                 </div>
                 <div class="modulo rosa">
@@ -322,7 +342,7 @@ if (!$_SESSION['usuario']){
                         </li>
                     </ul>
                 </div>
-                <div class="modulo roxo">
+                <div class="modulo lilas">
                     <h3>4. Controle</h3>
                     <ul>
                         <li>
